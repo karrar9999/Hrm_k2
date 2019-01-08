@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "429123350147",
+    "firebase_url": "https://hrmk2-13597.firebaseio.com",
+    "project_id": "hrmk2-13597",
+    "storage_bucket": "hrmk2-13597.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429123350147:android:372c2819c2ae0e2a",
+        "android_client_info": {
+          "package_name": "camp.codelab.hrm_k"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429123350147-gi8p2731skh3f9l33o4eqbd9acj8un7u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "camp.codelab.hrm_k",
+            "certificate_hash": "4069820c53959048a72b4e0b898af4a437d07f02"
+          }
+        },
+        {
+          "client_id": "429123350147-dmh443ke7cfpn2vqthqp8no90e4sv91n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYnJoUrIZ2BtpEEBTELzcQFcYEclqq6k8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429123350147-dmh443ke7cfpn2vqthqp8no90e4sv91n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
