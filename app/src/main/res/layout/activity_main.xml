@@ -20,7 +20,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="4dp"
             app:layout_constraintBottom_toTopOf="@+id/emaileditText2_register" android:hint="Name"
-            android:background="@drawable/rounded"/>
+            android:background="@drawable/rounded" app:layout_constraintVertical_chainStyle="spread"/>
     <EditText
             android:layout_width="320dp"
             android:layout_height="40dp"
@@ -60,13 +60,15 @@
             app:layout_constraintBottom_toTopOf="@+id/already_have_accounttextView"
             android:textStyle="bold"/>
     <TextView
-            android:text="Already have an account?"
+            android:text="Back to login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/already_have_accounttextView" app:layout_constraintEnd_toEndOf="@+id/registrationbutton"
-            app:layout_constraintStart_toStartOf="@+id/registrationbutton" android:layout_marginTop="21dp"
-            app:layout_constraintTop_toBottomOf="@+id/registrationbutton"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="207dp"
-            android:textSize="14sp" android:textStyle="bold" app:layout_constraintHorizontal_bias="0.533"/>
+            android:id="@+id/already_have_accounttextView"
+            android:textSize="14sp" android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/registrationbutton" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="158dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="158dp" android:layout_marginBottom="217dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -5,13 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import camp.codelab.hrm_k.R.id
-import camp.codelab.hrm_k.R.layout
+import camp.codelab.hrm_k.R.*
 
-class EmployeesAdapter(val employees: List<Employee>) : RecyclerView.Adapter<EmployeesAdapter.EmployeeViweHolder>() {
+class EmployeesAdapter(var employees: List<Employee>) : RecyclerView.Adapter<EmployeesAdapter.EmployeeViweHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EmployeeViweHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_employees, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(layout.item_employees, parent, false)
         return EmployeeViweHolder(view)
     }
 

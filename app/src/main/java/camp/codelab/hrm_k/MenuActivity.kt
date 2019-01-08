@@ -14,10 +14,12 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_menu.*
+import kotlinx.android.synthetic.main.item_employees.*
 
 private const val TAG = "MenuActivity"
 
 class MenuActivity : AppCompatActivity() {
+    val employees: MutableList<Employee> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +34,7 @@ class MenuActivity : AppCompatActivity() {
         }
     }
 
+
     private fun preparRecyclerView() {
 
         val db = FirebaseDatabase.getInstance()
@@ -44,13 +47,14 @@ class MenuActivity : AppCompatActivity() {
 
             override fun onDataChange(snapshot: DataSnapshot) {
 
-                var employees: MutableList<Employee> = mutableListOf()
 
                 snapshot.children.forEach { child ->
 
 
-                    var employee = snapshot.getValue(Employee::class.java)
+                    val employee = child.getValue(Employee::class.java)
+
                     employee?.let { employee ->
+
 
                         employees.add(employee)
 
@@ -60,9 +64,9 @@ class MenuActivity : AppCompatActivity() {
 
                 }
 
-
                 recyclerViwe.layoutManager = LinearLayoutManager(this@MenuActivity, RecyclerView.VERTICAL, false)
                 recyclerViwe.adapter = EmployeesAdapter(employees)
+
             }
         })
     }

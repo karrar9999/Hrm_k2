@@ -3,11 +3,9 @@ package camp.codelab.hrm_k
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 class LoginActivity : AppCompatActivity() {
 
@@ -21,8 +19,9 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        back_to_register_textview.setOnClickListener {
-            finish()
+        register_textview.setOnClickListener {
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
 
 
         }

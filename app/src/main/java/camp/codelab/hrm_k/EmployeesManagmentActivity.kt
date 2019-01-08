@@ -13,6 +13,7 @@ class EmployeesManagmentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_managment_employees)
 
+
         val db = FirebaseDatabase.getInstance()
         val ref = db.getReference("employees")
 
@@ -22,6 +23,13 @@ class EmployeesManagmentActivity : AppCompatActivity() {
 
 
         }
+
+        // ratingButton.setOnClickListener {rating->
+        //   val intent1=Intent(rating.context,EmployeeRating::class.java)
+        //  startActivity(intent1)
+
+        // }
+
         AddButton.setOnClickListener { add ->
 
             Log.v("TEST", "ADD BUTTON")
